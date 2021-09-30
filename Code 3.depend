@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1632913877 source:c:\users\iris\documents\codeblocks\practicec\code 3\main.c
+	<stdio.h>
+	<stdlib.h>
+

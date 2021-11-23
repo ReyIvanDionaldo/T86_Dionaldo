@@ -1,11 +1,20 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+int main(){
 
-int main()
-{
-      for(int i = 1; i <= 9;i++){
-        for(int j = i; j <= 9;j++){
-      j == 9 ?  printf("%d\n",i) : printf("%d",j);
-        }
-      }
+int n;
+printf("Enter any positive integer: ");
+scanf("%d", &n);
+
+while(n > 1){
+    if(n % 2 == 0){
+        n = n / 2;
+        printf("Current given value is: %d\n", n);
+    }
+    else{
+        n = n * 3 + 1;
+        printf("Current given value is: %d\n", n);
+    }
 }
+return 0;
+}
+

@@ -1,20 +1,21 @@
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+#include <stdlib.h>
 
-int n;
-printf("Enter any positive integer: ");
-scanf("%d", &n);
+int main()
+{
+    int num1 = 3000, num2 = 60, num3 = 360;
+    printf("Enter the first number");
+    scanf("%d",&num1);
+    printf("Enter the second number.");
+    scanf("%d",&num2);
+    printf("Enter the third number");
+    scanf("%d",&num3);
+     //
+    result = num1 / num2,;
+        printf("%d RPM / %d secs );
 
-while(n > 1){
-    if(n % 2 == 0){
-        n = n / 2;
-        printf("Current given value is: %d\n", n);
-    }
-    else{
-        n = n * 3 + 1;
-        printf("Current given value is: %d\n", n);
-    }
+        printf("%d RPM divide %d secs multiply %d degrees is %d degrees per second");
+
+    return 0;
+
 }
-return 0;
-}
-

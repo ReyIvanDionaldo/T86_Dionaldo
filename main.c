@@ -1,26 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
 
 int main(){
-    int temp;
-    printf("Please input temperature: ");
-    scanf("%d", &temp);
-    if(temp < 0){
-        printf("Freezing Weather!");
+
+int n;
+printf("Enter any positive integer: ");
+scanf("%d", &n);
+
+while(n > 1){
+    if(n % 2 == 0){
+        n = n / 2;
+        printf("Current given value is: %d\n", n);
     }
-    else if(temp >= 0 && temp <=10){
-        printf("It's a very cold weather!");
+    else{
+        n = n * 3 + 1;
+        printf("Current given value is: %d\n", n);
     }
-    else if(temp >= 10 && temp <=20){
-        printf("It's a cold weather!");
-    }
-    else if(temp >= 20 && temp <=30){
-        printf("It's a normal weather!");
-    }
-    else if(temp >= 30 && temp <=40){
-        printf("It's a hot weather!");
-    }
-    else if(temp>=40){
-        printf("It's a very hot weather!");
-    }
-    return 0;
+}
+return 0;
+}
 }
